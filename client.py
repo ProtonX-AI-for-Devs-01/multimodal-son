@@ -23,7 +23,7 @@ def main():
         if st.button("Generate caption"):
             files = {'file': ('image.png', img_byte_arr, 'image/png')}
             data = {'prompt': user_prompt}
-            response = requests.post('https://b582-35-245-16-26.ngrok-free.app/', files=files, data=data)
+            response = requests.post('https://471d-34-16-205-164.ngrok-free.app/', files=files, data=data)
 
             if response.status_code == 200:
                 result = response.json()
